@@ -1,0 +1,18 @@
+{
+  "name": "eth-merkle-example",
+  "version": "1.0.0",
+  "description": "This is an example project to help explain merkle tree based whitelists. It is only a sample. You will very likely need to modify it to fit your needs. No warranty or guarantee of any sort is included with this SAMPLE software package.",
+  "main": "",
+  "author": "Danny Mulvihill",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "hardhat": "^2.10.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.2",
+    "dotenv": "^16.0.1",
+    "solmate": "^6.5.0"
+  }
+}
