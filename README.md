@@ -4,6 +4,10 @@ This is an example project to help explain merkle tree based whitelists. It is o
 
 **Getting Started**
 
+Clone the repository
+
+`git clone git@github.com:Crossmint/eth-merkle-example.git`
+
 Install the dependencies
 
 `npm install`
@@ -44,7 +48,7 @@ Wait about a minute and then verify the Contract. (You'll need an etherscan API 
 
 ---
 
-To test out the `mintWhitelist` function in this sample contract you'll need to calculate a merkle root and then update the contract with it. 
+To test out the `whitelistMint` function in this sample contract you'll need to calculate a merkle root and then update the contract with it. 
 
 **How to calculate a merkle root:**
 You can use this package to calculate merkle root in javascript: https://github.com/Crossmint/merkle-pkg. There are directions in that repo. 
