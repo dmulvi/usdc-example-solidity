@@ -1,12 +1,13 @@
 const hre = require("hardhat");
 
 async function main() {
-  const EthMerk721NFT = await hre.ethers.getContractFactory("EthMerk721");
-  const EthMerk721 = await EthMerk721NFT.deploy();
+  const ExampleUSDCNFT = await hre.ethers.getContractFactory("ExampleUSDC");
+  //const ExampleUSDC = await ExampleUSDCNFT.deploy("0xFEca406dA9727A25E71e732F9961F680059eF1F9"); // mumbai
+  const ExampleUSDC = await ExampleUSDCNFT.deploy("0x98339D8C260052B7ad81c28c16C0b98420f2B46a"); // goerli
 
-  await EthMerk721.deployed();
+  await ExampleUSDC.deployed();
 
-  console.log("EthMerk721 deployed to:", EthMerk721.address);
+  console.log("ExampleUSDC deployed to:", ExampleUSDC.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

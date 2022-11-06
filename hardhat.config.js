@@ -7,14 +7,18 @@ dotenv.config();
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.9",
-  defaultNetwork: "hardhat",
+  defaultNetwork: "goerli",
   networks: {
-    rinkeby: {
-      url: process.env.RINKEBY_RPC_URL,
-      accounts: [process.env.PRIVATE_KEY]
-    },
     goerli: {
       url: process.env.GOERLI_RPC_URL,
+      accounts: [process.env.PRIVATE_KEY]
+    },
+    mumbai: {
+      url: process.env.MUMBAI_RPC_URL,
+      accounts: [process.env.PRIVATE_KEY]
+    },
+    matic: {
+      url: process.env.MAINNET_RPC_URL,
       accounts: [process.env.PRIVATE_KEY]
     },
     localhost: {
@@ -29,6 +33,9 @@ module.exports = {
     },
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_KEY
+    apiKey: {
+        goerli: process.env.ETHERSCAN_KEY,
+        polygonMumbai: process.env.POLYGONSCAN_KEY
+    }
   }
 };
